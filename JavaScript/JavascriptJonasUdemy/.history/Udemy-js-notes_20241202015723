@@ -1,0 +1,11 @@
+
+Data Types:
+
+Primitive data types:
+    Numbers: Used for numbers and integers.
+    String: Used for text
+    Boolean: Used for taking decisions
+    Undefined: Value taken by a variable that is not defines ('empty value')
+    Null: Emty value.
+    Symbol (Introduced in ES2015/ES6): Vaalue that is unique and cannot be changed.
+    BigInt (ES2020/ES2019): Larger integers than the Number type can hold.
