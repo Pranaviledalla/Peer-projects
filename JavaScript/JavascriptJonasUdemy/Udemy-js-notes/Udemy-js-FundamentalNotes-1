@@ -1,0 +1,175 @@
+History of JavaScript:
+    Quickely after internet was invented and two first web browsers  were developed.
+    Developers wanted to start making websies more interactive, in other words they needed a programming language for the browser.
+    In 1995, the Netscape Navigator, which bt theat time was the dominent browser hired a guy named Brendan Eich to create very first version of Javascript.
+    1995
+        Brendan Eich created first version of JavaScript in 10 days. It was called Mocha, but already many of the fundamental features of Modern JavaScript!
+    1996
+        Mocha canges to LiveScript and then to JavaScript, in order to attract Java developers. 
+        However, JavaScript has almost nothing to do with Java.
+        Microsoft lauches IE, copying JavaScript from Netscape and calling it JScript.
+    1997  
+        With a need to standardize the language, ECMA releases ECMAScript 1 (ES1), te first offical standard for JavaScript (ECMAScript is the standard, JavaScript the language in practice).  
+    2009
+        ES5 (ECMAScript 5) is released with lots of great new features. 
+    2015
+        ES6/ES2015 (ECMAScript2015) was released with the biggest update to the language ever.
+        ECMAScript changes to an annual relese cycle in order to ship less features per updates.
+    2016 - present
+        Release of ES2016/ES2017/ES2018/ES2019/ES2020/ES2021/..... 
+
+    Note: The JavaScript engin that we have today can be able to understand 25 years old code without havinf to rely on version numbers or any other things. It is because of the fundamental princia that is beaked into the JavaScript language and its developed, which is to not break the web. ECMAScript commite does all this stuff of new releases wih out breaking old version  and Not really new version but with just incremental updates so that websites will never break.
+Data Types:
+
+    Primitive data types:
+      In Jvascript is dynamically typing and value has the type not variable.
+        Numbers: Used for numbers and integers.
+        String: Used for text whic has to be inside single or double quotes. 
+        Boolean: Used for taking decisions
+        Undefined: Value taken by a variable that is not defines ('empty value')
+        Null: Emty value. but Js will consider it as an object where we consider as a bug as null is not an object.
+        Symbol (Introduced in ES2015/ES6): Value that is unique and cannot be changed.
+        BigInt (ES2020/ES2019): Larger integers than the Number type can hold.
+
+How to use modern JavaScript today?
+    First Use updated version of the google Chrome tis will work.
+    Second scenario is to production, which is hen application is finished we deploy it on the internet and then it runs in users browsers, we never know wich browsers users might use so the solution of this problem is to convert these modern JavaScript versions back to ES5 using a process called Transpling and also polyfilling. We cab use babel to transpile or code.
+
+How JavaScript releses used today:
+    ES5
+        Fully supported in all the browsers (down to IE 9 from 2011)
+    ES - ES2020
+        ES6+  supported in all modern browsers.
+        No support on older browsers.
+        Can use most features in production with trnspiling and polyfiling
+Why to butter with ES5?
+    Will undestand how some feature in JavaScript actually works behind the scenes or shows how JavaScript actually works.
+    Many tutorials and code in online today are still ES5.
+    When working on older base, these will be written in ES5.
+
+
+variables:
+
+    Let: 
+        We ue let to declare varable vaues that can change later during execution and variable names can not be changed.
+    Const:
+        We declare variable to give fixed values and during decelaration only we have to give values.
+    Var:
+        We can re declare variable names and can change value of variable.
+Comments:
+     We can comment each line using "//" 
+     To do multi line commetn we can use : "*/ Content /*"
+
+Basic Operators:
+    TypeOf: we can get to know the value type by using typeOf operator.
+
+    Assignment Operator:
+    '=': equals to
+    '+': addition
+    '++': increase by 1 value
+    '-': Substration
+    '--': decreasing 1 value
+    '*': multiplication
+    '/': division
+    '%' : Modules
+
+    Comparision Operator:
+    '>': Greater
+    '<': lesser
+    '>=': Greater or equal
+    '<=': Lesser or equal
+
+    Operator Precedence:
+        JS has well defined order of operator precedence. Basically the order in which operator executed
+        reffer Precedence table from MDN
+
+Templet literals: 
+Using templet liters it is easy to concatinate String values and can easly print vles in new line with out adding any extra specifications.
+    const pranaviNew =  `I'm ${firstName}, a ${year - birthYear} years old`;
+    console.log(pranaviNew);
+
+Looping statements:
+    If: Used to take desigions.
+    Else: If the staement in if statement is not satisfied the will come to else loop.
+    Switch statement:
+        To compare one value with different options then we can use Switch statements. for each and every statement we have to keep break once after exicuting it to avoid in going to next atatement.
+        Example:
+            const day = 'Monday'
+            Switch (day){
+                case 'Monday':
+                    console.log('Today is Monday');
+                    break;
+                case 'Tuesday':
+                    console.log('Today is Tuesday');
+                    break;
+                case 'Wednesday':
+                    console.log('Today is Wednesday');
+                    break;
+                case 'Thursday':
+                    console.log('Today is Thursday');
+                    break;
+                case 'Friday':
+                    console.log('Today is Thursday');
+                    break;
+                case 'Friday':
+                    console.log('Today is Friday');
+                    break;
+                case 'Saturday':
+                    console.log('Today is Saturday');
+                    break;
+                case 'Sunday':
+                    console.log('Today is Sunday');
+                    break;
+                default:
+                    console.log('Give vaild day');
+            }
+    
+Tuthy and falsy values:
+
+    In Js we have only 5 falsy vales, they are:
+        * 0
+        * ''
+        * undefined
+        * null
+        * NaN
+    Other tan above 5 values remaining all are truthy value.
+
+Equallity Operator
+    '==' it is loose and is used to compare values
+    '===' it is strict and is used t0 compe value and type
+
+Conditional(Ternary) operator:
+    Conditional operator will have 3 parts, one is statement then come to if part and else part. This ternary operato is use insted of using if ese statements and helps in redusing the code.
+    Example:
+        contition == true ? console.log('Comes to if part') : console.log('Comes to elase part)
+    Example 2:
+        Using if/else statement:
+            let drink;
+            if(age >=18){
+                drink = 'Wine';
+            }else{
+                drink = 'Water
+            }
+            console.log(drink);
+        Using Ternary operator:
+            const drink = age >= 18 ? 'Wine' : 'Water'; 
+            console.log(drink); 
+        Ternary operator in templet literals
+            console.log(`I like to drink ${age >= 18 ? 'Wine' : 'Water'})
+
+Boolean logic:
+    Boolean variables can either be true or false.
+
+Type Conventions and Coercion:
+    Type Conventions:  Converting from one type to another.
+        Const inputYear = '1999';
+        console.log(Numbe(inputYear)); //1999 (Output as number)
+        console.log(inputYear + 10); //199910 (Output as string and adding 10 to that string)
+    Type Coercion: JS will auomatically converts tpes behind the scenes for us.
+        Console.log('I am' + 23 + 'years old')  //O/p: I am 23 years old
+        Console.log('23' - '10' - 3) //o/p: 10 (it will do arthatic operation).
+        console.log('23' '10' 3) //o/p: 23103
+        console.lo('23' * '2')  //o/p: 46
+        console.lo('23' / '2') //o/p: 11.5
+        console.lo(3+4+2+'5') //o/p: "95"
+        console.lo('10'-'4'-'3'-2+'5') //o/p: "5"
